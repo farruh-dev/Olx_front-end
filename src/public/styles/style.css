@@ -87,7 +87,7 @@ body {
 
 .navbar .container-fluid .searchInputDiv .searchInput {
   width: 100%;
-  background-color: rosybrown;
+  background-color: #D4D7DD;
   padding: 10px 15px;
 }
 
@@ -107,6 +107,83 @@ body {
 #categoriesSection {
   background-color: #D4D7DD;
   padding: 50px 0;
+}
+
+#categoriesSection .categoriesWrapper {
+  width: 100%;
+}
+
+#categoriesSection .categoriesWrapper .categoriesHeading {
+  text-align: center;
+}
+
+#categoriesSection .categoriesWrapper .categoriesList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#categoriesSection .categoriesWrapper .categoriesList .categoryListItem {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#categoriesSection .categoriesWrapper .categoriesList .categoryListItem:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+#categoriesSection .categoriesWrapper .categoriesList .categoryListItem:hover a {
+  color: #D4D7DD;
+}
+
+#categoriesSection .categoriesWrapper .categoriesList .categoryListItem a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 15px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+#categoriesSection .categoriesWrapper .categoriesList .categoryListItem a i {
+  font-size: 3rem;
 }
 
 .registerSection {

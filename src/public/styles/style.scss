@@ -23,65 +23,122 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #F6F6F6;
     font-family: 'Raleway', sans-serif;
 }
 
-.navbar{
+.navbar {
 
     box-shadow: 0 5px 20px -10px rgba($color: #000000, $alpha: 0.2);
     background-color: #fff;
 
-    .container-fluid{
+    .container-fluid {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .navLogoDiv{
+
+        .navLogoDiv {
             display: flex;
             align-items: center;
             justify-content: center;
             user-select: none;
             width: 200px;
-            a{
+
+            a {
                 display: flex;
                 align-items: center;
                 color: #737373;
                 font-size: 2rem;
                 font-weight: 400;
                 font-family: 'Abril Fatface', cursive;
-    
-                .navLogo{
+
+                .navLogo {
                     border-radius: 50%;
                     margin-right: 10px;
                 }
             }
         }
-        .searchInputDiv{
+
+        .searchInputDiv {
             width: 500px;
 
-            .searchInput{
+            .searchInput {
                 width: 100%;
-                background-color: rosybrown;
+                background-color: #D4D7DD;
                 padding: 10px 15px;
             }
         }
-        
-        .navLinks{
+
+        .navLinks {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             margin: 0;
-            
+
         }
-    
+
     }
 }
 
-#categoriesSection{
+#categoriesSection {
     background-color: #D4D7DD;
     padding: 50px 0;
+
+    .categoriesWrapper {
+        width: 100%;
+
+        .categoriesHeading{
+            text-align: center;
+        }
+
+        .categoriesList {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .categoryListItem {
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                transition: 0.4s all;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: 0 15px 30px -10px rgba($color: #000000, $alpha: 0.1);
+                }
+                &:hover a{
+                    color: #D4D7DD;
+                }
+
+                a {
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    margin: 15px;
+                    transition: 0.4s all;
+
+                    i{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
 }
+
+// Products Section
 
 // Register page
 
